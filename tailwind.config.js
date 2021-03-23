@@ -3,8 +3,9 @@ module.exports = {
   purge: {
     enabled: true,
     content: [
-    './src/**/*.md', 
-    './_includes/**/*.liquid'
+    './src/**/*.md',
+    './src/**/*.html',
+    './src/**/*.liquid'
   ]
 },
   theme: {
