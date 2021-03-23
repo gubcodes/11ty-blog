@@ -11,6 +11,7 @@ FILENAME="src/posts/$YEAR/$MONTH/$TITLEF.md"
 cat <<EOF > $FILENAME
 ---
 title: "$TITLE"
+byline: 
 date: "$(date '+%Y-%m-%d')"
 tags:
 -
