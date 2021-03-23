@@ -15,7 +15,7 @@ eleventyComputed:
     <span class="text-2xl sm:text-4xl font-bold hover:underline"><a href="{{ post.url }}">{{ post.data.title }}</a></span>
   </p>
   <em>{{ post.date | date: "%Y-%m-%d" }}</em>
-  <p class="mt-4">{{ post.data.post_excerpt }}... 
+  <p class="mt-4">{{ post.data.byline }}... 
     <span class="hover:underline text-indigo-500"><a href="{{ post.url }}">Read More</a></span>
   </p>
 </div>
