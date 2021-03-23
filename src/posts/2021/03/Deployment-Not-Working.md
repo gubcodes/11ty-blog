@@ -1,6 +1,6 @@
 ---
 title: "Deployment Not Working?"
-byline: "Maybe it's out of your hands."
+byline: "Maybe it's out of your hands"
 date: "2021-03-22"
 tags:
 - "note to self"

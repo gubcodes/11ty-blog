@@ -1,6 +1,6 @@
 ---
 title: "How I Built and Published This Blog"
-byline: Dipping my toes into 11ty...
+byline: "Embracing Static Site Generation"
 date: "2021-03-23"
 tags:
 - "how i did it"
@@ -49,7 +49,7 @@ Then I clicked on the **New site from Git** (which may not be there if you signe
 
 My blog is now published, and *Netlify will automatically re-build and deploy* whenever I push changes from my local 11ty-blog project folder to the master branch of my GitHub repository**.
 
-**Alternatively**, you can choose to not connect your GitHub repository and use the drag-and-drop method to have Netlify build and deploy your code. Check out [Netlify's Step-By-Step Guide](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/).
+*Note: Alternatively, you can choose to not connect your GitHub repository and use the drag-and-drop method to have Netlify build and deploy your code. Check out [Netlify's Step-By-Step Guide](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/).*
 
 ## Adding blog posts
 
@@ -107,5 +107,6 @@ I changed my purge settings so that they now look like this:
 Now all unused CSS classes provided by tailwind will be purged at build time. Now my published blog is less than 100kb total.
 (*major performance increase*)
 
+That's it, I think. Maybe next time I'll include pictures...
 
 <!-- excerpt -->
