@@ -2,3 +2,6 @@
   color: grey!important;
   text-decoration: none!important;
 }
+/* ::selection {
+  background: red;
+} */

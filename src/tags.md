@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tags
+title: Gubcode
 ---
 
 {% for tag in collections.tagList %}

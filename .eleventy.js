@@ -4,7 +4,7 @@ const markdownItAnchor = require('markdown-it-anchor')
 
 module.exports = function(eleventyConfig) {
   // Plugins
-  eleventyConfig.addPlugin(syntaxHighlight)
+  eleventyConfig.addPlugin(syntaxHighlight);
   
   // To enable merging of tags
   eleventyConfig.setDataDeepMerge(true)
