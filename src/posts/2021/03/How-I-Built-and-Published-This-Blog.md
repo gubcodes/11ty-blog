@@ -85,7 +85,7 @@ I commented out line 15. Prism is a syntax highlighter for code snippets. I will
 
 2. part 1: postcss.config.js
 
-I removed (`./tailwind.config.js`) so that my file now looks like this:
+I removed `./tailwind.config.js` so that my file now looks like this:
 ```javascript
 module.exports = {
   plugins: [

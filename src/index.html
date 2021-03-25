@@ -7,12 +7,13 @@ pagination:
   reverse: true
   alias: posts
 ---
+<!-- this is the article list -->
 
 {% for post in pagination.items %}
 {% if post.data.published %}
 <div class="py-4">
   <p>
-    <span class="text-2xl sm:text-4xl font-bold hover:text-blue-700 leading-tight"><a href="{{ post.url }}">{{ post.data.title }}</a></span>
+    <span class="text-2xl sm:text-4xl font-bold hover:text-indigo-500 leading-tight"><a href="{{ post.url }}">{{ post.data.title }}</a></span>
     <br />
     <span class="text-base sm:text-2xl font-normal"> {{ post.templateContent | readTime }} min read</span>
   </p>
@@ -30,7 +31,7 @@ pagination:
       {% endfor %}
     </div>
     <br />
-    <a class="flex-none hover:underline font-semibold text-blue-700" href="{{ post.url }}">Read this post &rarr;</a>
+    <a class="flex-none hover:underline font-semibold text-indigo-500" href="{{ post.url }}">Read this post &rarr;</a>
   </div>
 
 </div>

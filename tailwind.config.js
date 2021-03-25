@@ -10,42 +10,49 @@ module.exports = {
 },
   theme: {
     extend: {
+      colors: {
+        'soft-white': '#c9b9b4',
+        'titles': '#d4c7c3'
+      },
       typography: (theme) => ({
         dark: {
           css: {
-            color: "white",
+            color: "#d4c7c3",
             a: {
-              color: "#9ECE6A",
+              color: "#d4c7c3",
               "&:hover": {
-                color: "#9ECE6A",
+                color: "#1d4ed8",
               },
             },
+            p: {
+              color: "#d4c7c3",
+            },
             h1: {
-              color: "white",
+              color: "#d4c7c3",
             },
             h2: {
-              color: "white",
+              color: "#d4c7c3",
             },
             h3: {
-              color: "white",
+              color: "#d4c7c3",
             },
             h4: {
-              color: "white",
+              color: "#d4c7c3",
             },
             h5: {
-              color: "white",
+              color: "#d4c7c3",
             },
             h6: {
-              color: "white",
+              color: "#d4c7c3",
             },
             th: {
-              color: "white",
+              color: "#d4c7c3",
             },
             strong: {
-              color: "white",
+              color: "#d4c7c3",
             },
             "blockquote p": {
-              color: "white",
+              color: "#d4c7c3",
             },
             code: {
               color: "white",

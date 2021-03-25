@@ -1,19 +1,24 @@
 ---
 layout: main
 ---
+<!-- this is an article -->
 
+<!-- nav -->
 {% include nav %}
 
-<p class="text-5xl md:text-6xl font-black pt-10 md:pt-30 pb-4 leading-tight">
+<!-- article title -->
+<p class="text-5xl md:text-6xl font-black pt-10 md:pt-30 pb-4 leading-tight dark:text-titles">
     {{ title}}
 </p>
 
-<div>
+<!-- date and time to read -->
+<div class="dark:text-soft-white">
     <em>{{ date | date: "%Y-%m-%d" }}</em> &middot; 
     <span>{{ content | readTime }} min read</span>
 </div>
 
-<div class="mt-3 pb-10">
+<!-- tags -->
+<div class="mt-3 pb-10 dark:text-soft-white">
   {% for tag in tags %}
     {% if tag != "posts" %}
       <a href="/tags/{{ tag }}">
@@ -23,8 +28,10 @@ layout: main
   {% endfor %}
   </div>
 
-<div class="prose dark:prose-dark">
+<!-- article content -->
+<div class="prose dark:prose-dark" id="proseLinkColor">
   {{ content }}
 </div>
 
+<!-- author info -->
 {% include author %}

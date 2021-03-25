@@ -1,12 +1,17 @@
 ---
 layout: main
 ---
+<!-- this is the home page, actually i think this is the main layout for all pages with the title at the top -->
 
-<p class="text-5xl md:text-6xl font-black py-10 md:py-20 leading-tight">
+<!-- title above nav -->
+<p class="text-5xl md:text-6xl font-black py-10 md:py-20 leading-tight dark:text-soft-white">
  {{ title }}
 </p>
-  
+
+<!-- nav -->
 {% include nav %}
-<div>
+
+<!-- article list from index.html, also about section -->
+<div class=" dark:text-soft-white">
   {{ content }}
 </div>

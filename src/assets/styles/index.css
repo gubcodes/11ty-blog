@@ -2,6 +2,15 @@
   color: grey!important;
   text-decoration: none!important;
 }
-/* ::selection {
-  background: red;
-} */
+#proseLinkColor a:hover {
+  color: #6366F1
+}
+#navLinkColor li:hover {
+  color: #6366F1
+}
+#footerLinkColor a:hover {
+  color: #6366F1
+}
+#aboutLinkColor a:hover {
+  color: #6366F1
+}
