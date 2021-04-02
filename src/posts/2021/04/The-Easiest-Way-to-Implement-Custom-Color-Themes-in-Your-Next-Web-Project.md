@@ -3,13 +3,11 @@ title: "The Easiest Way to Implement Custom Color Themes in Your Next Web Projec
 byline: "Taking advantage of your browser's storage"
 date: "2021-04-02"
 tags:
-- how i did it
-- dark mode
-- css
-- vanilla javascript
+- "how i did it"
+- "dark mode"
+- "css"
+- "vanilla javascript"
 ---
-# The Easiest Way to Implement Custom Color Themes in Your Next Web Project
-
 ## The short version
 
 1. Create multiple CSS classes each with different values for `color`, `background-color`, etc.
@@ -24,7 +22,7 @@ We can do all of this in less than 10 lines of combined HTML, CSS, and JavaScrip
 
 Start with a  HTML document, and add something similar to the following in the `head` section:
 
-```
+```html
 <style>
    .dark {background-color: black; color: white;}
 </style>
@@ -35,7 +33,7 @@ This is just a classic "dark mode" example. Feel free to try any color combinati
 
 Add the following function to the bottom of the `body` of your document, just above the closing tag:
 
-```
+```html
 <script>
   function changeTheme (value) {
     localStorage.theme = value;
@@ -46,14 +44,14 @@ Add the following function to the bottom of the `body` of your document, just ab
 ```
 With this function, we are doing three things:
 1.  Adding our "theme" key to the browser's local storage with a value of whatever we want to pass into the function parameter
-2. Removing any classes the `documentElement` may already have assigned to it - important for switching between 
+2. Removing any classes the `documentElement` may already have assigned to it - important for switching between different themes
 3. Assigning our class to the `documentElement`
 
 ### HTML
 
 Let's add a `button` to our HTML `body` above the `script` we just put in:
 
-```
+```html
 <button class="dark" onclick="changeTheme('dark')">dark</button>
 ```
 Notice we added the `onclick` event to call on our `changeTheme` function with our class name as the parameter. I also assigned the class to the button itself just for fun.
